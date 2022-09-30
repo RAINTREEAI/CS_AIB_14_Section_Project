@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        used book price
+    </title>
+    <style type="text/css">
+        #back {
+          background-color : rgb(249, 245, 235);
+        }
+        #layer {
+            position: absolute;
+            text-align: center;
+            width: 50%;
+            height: 40%;
+            top: 25%;
+            left: 40%;
+            display: inline-block;
+            vertical-align: middle;
+            background-color : rgb(248, 240, 223);
+        }
+        #layer_shadow {
+            position: absolute;
+            text-align: center;
+            width: 50%;
+            height: 45%;
+            top: 20.8%;
+            left: 40.4%;
+            display: inline-block;
+            vertical-align: middle;
+            border: 0px;
+            background-color : rgb(85, 85, 85);
+        }
+        #main_name {
+            position: absolute;
+            text-align: left;
+            width: 23%;
+            height: 10%;
+            top: 13%;
+            left: 5%;
+            display: inline-block;
+            vertical-align: middle;
+            color: rgb(249, 245, 235)
+        }
+        .my_box{
+          position: absolute;
+          /* text-align: left; */
+          width: 15%;
+          height: 10%;
+          top: 20%;
+          left: 40%;
+          /* display: inline-block;
+          vertical-align: middle; */
+          padding: 10px;
+          border-radius: calc(.5rem - 1px);
+          background-color: rgb(121, 180, 183);
+        }
+        #text {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 20%;
+            left: 0%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body id="back">
+    <div id="layer_shadow" class="card" style="width: 18rem;"></div>
+    <div class="my_box">
+      <strong id="main_name" href="#" role="button" onClick="location.href='../'"  >Used_Book_Price</strong>
+    </div>
+    <div id="layer" class="card" style="width: 18rem;">
+        <div id="text">
+            <h3>내 책의 예상 중고가</h3><br>
+            <h1>{{ data }}원</h1><br>
+            <h3>입니다.</h3><br>
+            <a href="./search" class="btn btn-primary">도서 검색</a>
+            <a href=".././direct" class="btn btn-danger">직접 입력</a>
+        </div>
+    </div>
+  </body>
+</html>
